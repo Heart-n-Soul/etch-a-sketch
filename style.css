@@ -29,10 +29,17 @@
 
 .grid-container {
   width: 450px;
-  height: 450px;
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
 
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.square {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 0.06rem;
 }
 
 .buttons-container {
@@ -102,5 +109,6 @@ input {
   right: 0;
   bottom: 0;
   position: fixed;
+
   margin-bottom: 20px;
 }
